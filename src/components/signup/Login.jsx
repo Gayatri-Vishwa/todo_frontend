@@ -27,7 +27,7 @@ function Login() {
             toast.success("user login successfully")
           navigate('/todo')                    //navigate to todo after login successfull
     } catch (error) {
-         toast.error(error.response?.data?.message );
+         toast.error(error.response?.data?.message || "Login failed");
       
     }
     
