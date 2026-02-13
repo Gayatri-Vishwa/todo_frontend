@@ -1,5 +1,5 @@
 import About from "./components/about/About.jsx";
-import Footer from "./components/footer/footer.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 import Home from "./components/home/Home.jsx";
 import Login from "./components/signup/Login.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
