@@ -1,5 +1,5 @@
 // import React, { useState } from "react";
-import "./Todo.css";
+import "./todo.css";
 import { MdDelete } from "react-icons/md";
 import { GrDocumentUpdate } from "react-icons/gr";
 
