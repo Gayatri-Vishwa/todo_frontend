@@ -23,8 +23,9 @@ const submit = async (e) => {
    setInputs({ username: "", email: "", password: "" });
    navigate('/login')    // Navigate after successful signup
   } catch (err) {
-     alert(err.response?.data?.message || "Something went wrong");   //err.response?.data?.message = user already exist
-      setInputs({ username: "", email: "", password: "" });
+    //  alert(err.response?.data?.message || "Something went wrong");   //err.response?.data?.message = user already exist
+        alert(err.response?.data?.message);   
+     setInputs({ username: "", email: "", password: "" });
     // console.error("Axios error:", err.response?.data || err.message);
   }
 };
