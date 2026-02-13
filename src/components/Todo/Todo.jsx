@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"; //only signup users can store data in DB
 import "./todo.css";
-import TodoCards from "./TodoCards";
+import TodoCards from "./TodoCards.jsx";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import UpdateTodo from "./UpdateTodo";
