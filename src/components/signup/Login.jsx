@@ -28,7 +28,7 @@ function Login() {
           navigate('/todo')                    //navigate to todo after login successfull
     } catch (error) {
          toast.error(error.response?.data?.message );
-       console.log(error.response.data,"error in logged in");
+      
     }
     
   }
@@ -82,7 +82,7 @@ export default Login
 
 
 
-// 1️⃣ What is sessionStorage?    "here used in submit func"
+// 1️ What is sessionStorage?    "here used in submit func"
 // sessionStorage is a built-in browser object that lets you store data temporarily in the browser for that session (until the browser tab is closed).
 // It’s part of the Web Storage API, along with localStorage.
 //  takes two argument.......... sessionStorsage.setItem("key","value")

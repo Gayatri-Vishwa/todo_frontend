@@ -26,11 +26,11 @@ useEffect(()=>{
   return (
     
     <div className="min-h-100vh ">
-          <ToastContainer 
+          {/* <ToastContainer 
         position="top-right"
         autoClose={2500}
         theme="colored"
-      />
+      /> */}
    
       <Router>
         <Navbar />
