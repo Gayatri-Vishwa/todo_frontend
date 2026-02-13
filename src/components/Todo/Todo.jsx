@@ -4,7 +4,7 @@ import TodoCards from "./TodoCards";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import UpdateTodo from "./UpdateTodo";
-import axios from "axios";
+import axios from "../../axios";;
 
 function Todo() {
   // const [toUpdateArray,setToUpdateArray]=useState([])

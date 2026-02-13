@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./todo.css";
 import { FaWindowClose } from "react-icons/fa";
-import axios from "axios";
+import axios from "../../axios";;
 import { toast } from "react-toastify";
 
 function UpdateTodo({

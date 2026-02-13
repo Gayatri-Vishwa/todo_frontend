@@ -2,7 +2,7 @@ import React from 'react'
 import "./signup.css";
 import { useState } from 'react';
 import HeadingComp from "./HeadingComp";
-import axios from 'axios';
+import axios from "../../axios";;
 import { useDispatch } from 'react-redux';
 import { authActions } from '../../store';
 import { useNavigate } from 'react-router-dom';
