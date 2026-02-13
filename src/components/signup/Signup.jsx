@@ -3,7 +3,7 @@ import "./signup.css";
 import HeadingComp from "./HeadingComp";
 import axios from "../../axios";
 import {useNavigate }from 'react-router-dom'
-import { toast } from "react-toastify";
+import {  ToastContainer, toast } from "react-toastify";
 
 
 function Signup() {
@@ -36,6 +36,7 @@ const submit = async (e) => {
   return (
     <div className="signup overflow-hidden ">
       <div className="container mx-auto max-w-8xl ">
+          <ToastContainer />
         <div className="row h-[80vh] w-[80vw]  flex flex-col-reverse justify-center items-center  gap-8  align-center   md:flex-row ">
           <div className="col1 w-full  flex md:w-2/3 justify-center  h-[470px]  items-center ">
 

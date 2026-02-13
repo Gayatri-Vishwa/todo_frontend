@@ -6,7 +6,7 @@ import axios from "../../axios";;
 import { useDispatch } from 'react-redux';
 import { authActions } from '../../store';
 import { useNavigate } from 'react-router-dom';
-import { toast } from "react-toastify";
+import {ToastContainer, toast } from "react-toastify";
 
 function Login() {
   const navigate=useNavigate()
@@ -36,6 +36,7 @@ function Login() {
   return (
     <div className="signup overflow-hidden ">
       <div className="container mx-auto max-w-8xl ">
+          <ToastContainer />
         <div className="row h-[80vh] w-[80vw]  flex flex-col justify-center items-center  gap-8  align-center   md:flex-row  ">
             <div className="col w-full  md:w-1/3  flex justify-center items-center">
            <HeadingComp first={"Log"} second={"In"}/>
