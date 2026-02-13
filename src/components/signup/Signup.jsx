@@ -3,6 +3,7 @@ import "./signup.css";
 import HeadingComp from "./HeadingComp";
 import axios from "../../axios";
 import {useNavigate }from 'react-router-dom'
+import { toast } from "react-toastify";
 
 
 function Signup() {
@@ -19,12 +20,12 @@ const submit = async (e) => {
   try {
     const response = await axios.post("/api/v1/register", inputs);
     console.log("Response:", response.data);
-    alert(response.data.message)                      //response.data.message= user registered      
+     toast.success(response.data.message)                      //response.data.message= user registered      
    setInputs({ username: "", email: "", password: "" });
    navigate('/login')    // Navigate after successful signup
   } catch (err) {
     //  alert(err.response?.data?.message || "Something went wrong");   //err.response?.data?.message = user already exist
-        alert(err.response?.data?.message);   
+         toast.error(err.response?.data?.message);   
      setInputs({ username: "", email: "", password: "" });
     // console.error("Axios error:", err.response?.data || err.message);
   }

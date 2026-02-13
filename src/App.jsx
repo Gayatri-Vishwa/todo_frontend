@@ -4,6 +4,7 @@ import Home from "./components/home/Home.jsx";
 import Login from "./components/signup/Login.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
 import Todo from "./components/Todo/Todo.jsx";
+import { ToastContainer } from "react-toastify";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Signup from "./components/signup/Signup.jsx";
@@ -23,7 +24,13 @@ useEffect(()=>{
 },[])
 
   return (
+    
     <div className="min-h-100vh ">
+          <ToastContainer 
+        position="top-right"
+        autoClose={2500}
+        theme="colored"
+      />
    
       <Router>
         <Navbar />

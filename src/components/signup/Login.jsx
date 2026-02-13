@@ -6,6 +6,7 @@ import axios from "../../axios";;
 import { useDispatch } from 'react-redux';
 import { authActions } from '../../store';
 import { useNavigate } from 'react-router-dom';
+import { toast } from "react-toastify";
 
 function Login() {
   const navigate=useNavigate()
@@ -23,9 +24,10 @@ function Login() {
           console.log(response.data.others._id);     //'...others' are users data without password ....we have defined in backend
           sessionStorage.setItem("id",response.data.others._id)
           dispatch(authActions.login())
+            toast.success("user login successfully")
           navigate('/todo')                    //navigate to todo after login successfull
     } catch (error) {
-       alert(error.response?.data?.message || "Something went wrong");
+         toast.error(error.response?.data?.message || "Something went wrong");
        console.log(error.response.data,"error in logged in");
     }
     
