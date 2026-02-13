@@ -1,0 +1,77 @@
+
+
+.main-container,
+.todo-body {
+  flex-grow: 1;
+}
+
+ .todo {
+  width: 100%;
+  min-height: 80vh; /* remove 100vh */
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* INPUTS */
+.inpt,
+.textArea {
+  border: none;
+  outline: none;
+  /* width: 100%; */
+}
+
+.textArea {
+  resize: vertical;
+}
+
+/* CARD */
+.todo-card {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* FIXED WIDTH REMOVED */
+.todo-body {
+  width: 100%;
+}
+
+/* UPDATE MODAL */
+.update-todo {
+  position: fixed;
+  inset: 0;
+  padding: 1rem;
+}
+
+.up {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  min-height: 40vh;
+  background-color: blanchedalmond;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* ICONS */
+.del {
+  color: red;
+  font-size: 24px;
+}
+
+.update {
+  color: green;
+  font-size: 20px;
+}
+
+
+.head {
+  transition: all 0.3s;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.head:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.3s;
+}

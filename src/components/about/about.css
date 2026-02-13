@@ -1,0 +1,13 @@
+.container{
+   min-height: calc(100vh - 300px);
+    width: 80vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.para{
+    text-align: justify;
+    text-justify: inter-word;
+}
