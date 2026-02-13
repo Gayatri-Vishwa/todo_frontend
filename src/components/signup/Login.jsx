@@ -27,7 +27,7 @@ function Login() {
             toast.success("user login successfully")
           navigate('/todo')                    //navigate to todo after login successfull
     } catch (error) {
-         toast.error(error.response?.data?.message || "Something went wrong");
+         toast.error(error.response?.data?.message );
        console.log(error.response.data,"error in logged in");
     }
     
